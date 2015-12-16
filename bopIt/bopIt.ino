@@ -189,7 +189,7 @@ void checkSound() {
   timerB = millis();
 //  Serial.println(analogRead(pinSound));
   if (timerB - timerA < delayCount) {
-    if (analogRead(pinSound) > 800) {
+    if (analogRead(pinSound) > 900) {
       counter = counter + 1;
       delayCount = delayCount - 250;
       digitalWrite(pinLed, HIGH);
